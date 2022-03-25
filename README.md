@@ -4,7 +4,7 @@
 Требуется создать “Intelligent Placer”: по поданной на вход фотографии нескольких предметов (не больше 10 предметов) на светлой горизонтальной поверхности и многоугольнику понимать, можно ли расположить одновременно все эти предметы на плоскости так, чтобы они влезли в этот многоугольник. <br>
 “Intelligent Placer” должен быть оформлен в виде python-библиотеки **intelligent_placer_lib**, которая поставляется каталогом **intelligent_placer_lib** с файлом **intelligent_placer.py**, содержащим функцию
 ```python
-def check_image(strPathToImg)
+def checkImage(strPathToImg)
 ```
 ### Вход и выход 
 Входа к этой функции: **АБСОЛЮТНЫЙ** путь к фотографии предметов, имеющий тип string <br>
@@ -12,7 +12,7 @@ def check_image(strPathToImg)
 ```python
 from intelligent_placer_lib import intelligent_placer
 def test_intelligent_placer():
-	assert intelligent_placer.check_image(“C:/Users/shaot/code/image.png”)
+	assert intelligent_placer.checkImage(“C:/Users/shaot/code/image.png”)
 ```
 
 ### Требование
